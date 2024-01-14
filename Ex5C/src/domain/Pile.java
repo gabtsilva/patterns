@@ -1,3 +1,5 @@
+package domain;
+
 public interface Pile {
 	boolean estVide();
 

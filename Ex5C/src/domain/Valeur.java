@@ -1,3 +1,5 @@
+package domain;
+
 public class Valeur implements Partie {
 	private int nombre;
 	private int niveau = 0;

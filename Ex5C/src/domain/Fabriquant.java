@@ -1,3 +1,5 @@
+package domain;
+
 public class Fabriquant {
 	private Pile pile = new PileImpl();
 	private Partie resultat;
@@ -17,7 +19,7 @@ public class Fabriquant {
 			if (resultat == null) {
 				resultat = nouveau;
 			} else {
-				throw new RuntimeException(); // fichier malformé
+				throw new RuntimeException(); // fichier malforme
 			}
 		}
 	}

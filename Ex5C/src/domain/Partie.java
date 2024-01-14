@@ -1,3 +1,5 @@
+package domain;
+
 public interface Partie {
 	void demande(Traitement traitement);
 

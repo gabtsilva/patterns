@@ -1,3 +1,5 @@
+package domain;
+
 public interface Traitement {
 	void traiteValeur(Valeur unique);
 

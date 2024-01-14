@@ -1,3 +1,7 @@
+package main;
+
+import domain.*;
+
 import java.io.IOException;
 import java.util.Iterator;
 
@@ -18,9 +22,9 @@ public class Main {
 		System.out.println();
 		ListeurNom listeurNom = new ListeurNom();
 		partie.demande(listeurNom);
-		Iterator itérateur = listeurNom.getLesNoms();
-		while (itérateur.hasNext()) {
-			String s = (String) itérateur.next();
+		Iterator iterateur = listeurNom.getLesNoms();
+		while (iterateur.hasNext()) {
+			String s = (String) iterateur.next();
 			System.out.println(s);
 		}
 		System.out.println();

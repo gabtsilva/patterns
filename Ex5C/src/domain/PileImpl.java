@@ -1,3 +1,5 @@
+package domain;
+
 public class PileImpl implements Pile {
 	private NoeudPile tete;
 	private int taille;
@@ -6,16 +8,16 @@ public class PileImpl implements Pile {
 		this.tete = null;
 	}
 
-	public void push(Object élément) {
-		this.tete = new NoeudPile(élément, this.tete);
+	public void push(Object element) {
+		this.tete = new NoeudPile(element, this.tete);
 		this.taille++;
 	}
 
 	public Object pop() {
-		Object résultat = sommet();
+		Object resultat = sommet();
 		this.tete = this.tete.getSuivant();
 		this.taille--;
-		return résultat;
+		return resultat;
 	}
 
 	public Object sommet() {
@@ -32,13 +34,13 @@ public class PileImpl implements Pile {
 
 	public String toString() {
 		NoeudPile courant = this.tete;
-		String résultat = "";
+		String resultat = "";
 		while (courant != null) {
-			résultat += courant.getElement();
-			résultat += " ";
+			resultat += courant.getElement();
+			resultat += " ";
 			courant = courant.getSuivant();
 		}
-		return résultat;
+		return resultat;
 	}
 
 	class NoeudPile {
@@ -50,11 +52,11 @@ public class PileImpl implements Pile {
 		}
 
 		public NoeudPile(Object element, NoeudPile suivant) {
-			setElément(element);
+			setElement(element);
 			setSuivant(suivant);
 		}
 
-		public void setElément(Object elem) {
+		public void setElement(Object elem) {
 			this.element = elem;
 		}
 
