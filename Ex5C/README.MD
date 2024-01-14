@@ -40,16 +40,18 @@ construct() | construire()
 buildPart() | construirePartie(), construireGroupe()
 getResult() | getResultat()
 
-### Pattern n°4 : Builder
+### Pattern n°4 : ???
 Participants théoriques |Noms utilisés dans le code|  
 -------------------------------|-----------------------------| 
-Director | Lecteur
-ConcreteBuilder | Fabriquant
-Product | Partie
-Builder | Fabriquant
+
 
 Nom théorique des méthodes |Noms utilisés dans le code|  
 -------------------------------|-----------------------------|
-construct() | construire()  
-buildPart() | construirePartie(), construireGroupe()
-getResult() | getResultat()
+
+### Pattern n°5 : ???
+Participants théoriques |Noms utilisés dans le code|  
+-------------------------------|-----------------------------| 
+
+
+Nom théorique des méthodes |Noms utilisés dans le code|  
+-------------------------------|-----------------------------|
