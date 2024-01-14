@@ -1,19 +1,19 @@
 package domain;
 
 public class PalindromeObserver implements Observer{
-    private int nbrPalindromes;
+    private int palindromeCount;
     @Override
-    public void update(String s) {
-        for (String mot : s.trim().split(" ")) {
-            StringBuilder temp = new StringBuilder(mot);
-            if (mot.contentEquals(temp.reverse())) {
-                nbrPalindromes++;
+    public void update(String line) {
+        for (String word : line.trim().split(" ")) {
+            StringBuilder temp = new StringBuilder(word);
+            if (word.contentEquals(temp.reverse())) {
+                palindromeCount++;
             }
         }
     }
 
     @Override
     public void end() {
-        System.out.println("Ce fichier contient " + nbrPalindromes + " palindrome(s).");
+        System.out.println("Ce fichier contient " + palindromeCount + " palindrome(s).");
     }
 }

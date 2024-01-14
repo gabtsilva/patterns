@@ -3,7 +3,7 @@ package domain;
 public class LineCountObserver implements Observer{
     private int count;
     @Override
-    public void update(String s) {
+    public void update(String line) {
         count++;
     }
     public void end() {
