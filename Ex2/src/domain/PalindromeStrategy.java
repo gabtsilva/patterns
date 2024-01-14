@@ -1,9 +1,8 @@
 package domain;
 
 public class PalindromeStrategy implements Strategy{
-    public void treatWord(String word) {
-        if (isPalindrome(word))
-            System.out.println(word);
+    public boolean treatWord(String word) {
+        return isPalindrome(word);
     }
     private boolean isPalindrome(String word) {
         if (word == null)

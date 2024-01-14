@@ -1,15 +1,12 @@
 package main;
 
-import domain.ListWords;
-import domain.PalindromeStrategy;
-import domain.StartsWithStrategy;
-import domain.WordOfLengthStrategy;
+import domain.*;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         ListWords listWords = new ListWords(args[0]);
-        listWords.treat(new WordOfLengthStrategy(5));
+        listWords.treat(new AndDecorator(new StartsWithStrategy('a'), new WordOfLengthStrategy(3)));
     }
 }

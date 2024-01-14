@@ -17,7 +17,7 @@ public class ListWords {
             StringTokenizer words = new StringTokenizer(line, " \t.;(){}\"'*=:!/\\");
             while (words.hasMoreTokens()) {
                 String word = words.nextToken();
-                strategy.treatWord(word);
+                if (strategy.treatWord(word)) System.out.println(word);
             }
         }
     }
