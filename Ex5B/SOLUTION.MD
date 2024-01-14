@@ -1,25 +1,24 @@
+
 ## Patterns - Exercice 5B
 
-Participants théoriques |Noms utilisés dans le code|
--------------------------------|-----------------------------|
-Template Method					 	| 
-Abstract Class					 	| DwarvenMineWorker
-Concrete Class 	| DwarvenGoldDigger, DwarvenCartOperator, DwarvenTunnelDigger
-Facade |
-Facade | DwarvenGoldmine
-ComplicatedClassA,B.. | DwarvenGoldDigger, DwarvenCartOperator, DwarvenTunnelDigger
-
-###
-Nom théorique des méthodes |Noms utilisés dans le code|
--------------------------------|-----------------------------|
+### Pattern n°1 : Template Method
+Participants théoriques |Noms utilisés dans le code|  
+-------------------------------|-----------------------------|  
+Abstract Class                 | DwarvenMineWorker  
+Concrete Class  | DwarvenGoldDigger, DwarvenCartOperator, DwarvenTunnelDigger  
+###  
+Nom théorique des méthodes |Noms utilisés dans le code|  
+-------------------------------|-----------------------------|  
 Template Method |
-PrimitiveOperation1() | work()
-PrimitiveOperation2() | goToSleep()
-PrimitiveOperation3() | wakeUp()
-PrimitiveOperation4() | goHome()
-PrimitiveOperation5() | goToMine()
-Facade |
-do() | makeActions()
-doA() | action()
-do() | goToSleep()
+PrimitiveOperation() | work(), goToSleep(), wakeUp(), goHome(), goToMine() 
 
+### Pattern n°2 : Facade
+Participants théoriques |Noms utilisés dans le code|  
+-------------------------------|-----------------------------| 
+Facade | DwarvenGoldmine  
+ComplicatedClassA,B,C.. | DwarvenGoldDigger, DwarvenCartOperator, DwarvenTunnelDigger  
+###  
+Nom théorique des méthodes |Noms utilisés dans le code|  
+-------------------------------|-----------------------------|
+do() | makeActions()  
+doA,B,C..() | action()
